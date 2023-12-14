@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/979172bb1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Felicidad en cada huella</h1>
+                <p>
+                    En Healthy Pets Hub, nos enorgullece ofrecer cuidado y atención excepcionales
+                    para tus queridas mascotas. Nuestro equipo de profesionales altamente capacitados está comprometido
+                    con la salud y el bienestar de tus compañeros peludos.
+                </p>
+                <a href="#" class="btn-1">informacion</a>
+            </div>
+            <div class="header-img">
+                <img src="images/left.png" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <section class="about container">
+
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-txt">
+            <h2>Nosotros</h2>
+            <p>
+                Somos un centro veterinario dedicado a proporcionar la más 
+                alta calidad de atención y cuidado para tus seres queridos 
+                de cuatro patas. En Healthy Pets Hub, nuestro compromiso con 
+                el bienestar animal va más allá de la medicina veterinaria; 
+                nos esforzamos por crear un ambiente donde cada mascota se 
+                sienta amada, segura y saludable.
+            </p>
+            <br>
+            <h3>Nuestra Misión: Salud y Felicidad para Tus Mascotas</h3>
+            <p>
+                Somos más que un lugar para tratamientos médicos; somos un 
+                refugio de cuidado y compasión. Nuestra misión es simple pero 
+                profunda: velar por la salud y la felicidad de tus mascotas. 
+                Desde la prevención hasta los cuidados especializados, estamos 
+                aquí para cada paso del viaje de tus amigos peludos.
+            </p>
+        </div>
+    </section>
+
+    <main class="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-content container">
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-syringe"></i>
+                <h3>Vacunación</h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Cirugía</h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-microscope"></i>
+                <h3>Laboratorio</h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-dog"></i>
+                <h3>Estética</h3>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="formulario container">
+        <form method="post" autocomplete="off">
+            <h2>Agenda consulta</h2>
+            <div class="input-container">
+                <input type="text" name="name" placeholder="Nombre y Apellido">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-container">
+                <input type="tel" name="phone" placeholder="Telefono Celular">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="input-container">
+                <input type="email" name="email" placeholder="Correo">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-container">
+                <textarea name="message" placeholder="Detalles de la consulta"></textarea>
+            </div>
+            <input type="submit" name="send" class="btn" onclick="myFunction()">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+        </div>
+
+        <div class="link">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <?php
+        include("send.php");
+    ?>
+    
+    <script>
+        function myFunction(){
+            window.location.href="http://localhost/pagina"
+        }
+    </script>
+    
+</body>
+</html>
